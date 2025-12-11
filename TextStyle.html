@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text Style</title>
+    <style>
+        #textPara{
+            border: 1px solid #999;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        table{
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th,td{
+            border: 1px solid #ccc;
+            padding: 4px 6px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Text Style</h2>
+
+    <p id="textPara">
+        This is a paragraph of text that has various alignment and text style
+        characteristics. Change the style using the radio buttons below.
+    </p>
+
+    <table>
+        <tr>
+            <th>fontFamily</th>
+            <th>textAlign</th>
+            <th>lineHeight</th>
+            <th>letterSpacing</th>
+            <th>textTransform</th>
+            <th>textDecoration</th>
+        </tr>
+        <tr>
+            <!-- fontFamily -->
+            <td>
+                <label><input type="radio" name="fontFamily" value="arial"> arial</label><br>
+                <label><input type="radio" name="fontFamily" value="courier"> courier</label><br>
+                <label><input type="radio" name="fontFamily" value="verdana"> verdana</label>
+            </td>
+
+            <!-- textAlign -->
+            <td>
+                <label><input type="radio" name="textAlign" value="left"> left</label><br>
+                <label><input type="radio" name="textAlign" value="center"> center</label><br>
+                <label><input type="radio" name="textAlign" value="right"> right</label><br>
+                <label><input type="radio" name="textAlign" value="justify"> justify</label>
+            </td>
+
+            <!-- lineHeight -->
+            <td>
+                <label><input type="radio" name="lineHeight" value="normal"> normal</label><br>
+                <label><input type="radio" name="lineHeight" value="1.5"> 1.5</label><br>
+                <label><input type="radio" name="lineHeight" value="2"> 2</label>
+            </td>
+
+            <!-- letterSpacing -->
+            <td>
+                <label><input type="radio" name="letterSpacing" value="0px"> 0px</label><br>
+                <label><input type="radio" name="letterSpacing" value="2px"> 2px</label><br>
+                <label><input type="radio" name="letterSpacing" value="4px"> 4px</label>
+            </td>
+
+            <!-- textTransform -->
+            <td>
+                <label><input type="radio" name="textTransform" value="none"> none</label><br>
+                <label><input type="radio" name="textTransform" value="uppercase"> uppercase</label><br>
+                <label><input type="radio" name="textTransform" value="lowercase"> lowercase</label>
+            </td>
+
+            <!-- textDecoration -->
+            <td>
+                <label><input type="radio" name="textDecoration" value="none"> none</label><br>
+                <label><input type="radio" name="textDecoration" value="underline"> underline</label><br>
+                <label><input type="radio" name="textDecoration" value="line-through"> line-through</label>
+            </td>
+        </tr>
+    </table>
+
+    <script src="textStyle.js"></script>
+</body>
+</html>

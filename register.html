@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Registration</title>
+</head>
+<body>
+  <h2>Registration Form</h2>
+
+  <form id="regForm" action="thankyou.html" method="get">
+    <!-- Full name -->
+    <div>
+      <label for="fullName">Full Name:</label>
+      <input
+        type="text"
+        id="fullName"
+        name="fullName"
+        placeholder="Enter your Name:"
+        required
+      />
+      <span id="nameError" style="color:red; font-size:13px; margin-left:5px;"></span>
+    </div>
+    <br />
+
+    <!-- Email -->
+    <div>
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        required
+      />
+    </div>
+    <br />
+
+    <!-- City -->
+    <div>
+      <label for="city">City:</label>
+      <select id="city" name="city">
+        <option value="Cairo">Cairo</option>
+        <option value="Alexandria">Alexandria</option>
+        <option value="Giza">Giza</option>
+        <option value="Mansoura">Mansoura</option>
+      </select>
+    </div>
+    <br />
+
+    <!-- Password -->
+    <div>
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        required
+      />
+    </div>
+    <br />
+
+    <!-- Repeat password -->
+    <div>
+      <label for="repeatPassword">Repeat Password:</label>
+      <input
+        type="password"
+        id="repeatPassword"
+        name="repeatPassword"
+        required
+      />
+      <span id="passError" style="color:red; font-size:13px; margin-left:5px;"></span>
+    </div>
+    <br />
+
+    <!-- Terms -->
+    <div>
+      <label>
+        <input type="checkbox" id="terms" name="terms" required />
+        I accept the terms and conditions
+      </label>
+    </div>
+    <br />
+
+    <button type="submit">Register</button>
+  </form>
+
+  <script src="register.js"></script>
+</body>
+</html>
